@@ -1,0 +1,84 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .support-portal {
+    background-color: #1976d2;
+    color: white;
+    min-height: 100vh;
+    padding: 40px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .search-section h2 {
+    margin: 0 0 20px 0;
+  }
+  
+  .search-bar {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 600px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    background-color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  
+  .search-bar i {
+    font-size: 20px;
+    color: gray;
+  }
+  
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .links a {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    margin: 10px 0;
+  }
+  
+  .featured h3 {
+    margin-bottom: 10px;
+  }
+  
+  .featured ol {
+    padding-left: 20px;
+  }
+  
+  .featured li a {
+    color: white;
+    text-decoration: underline;
+  }
+  

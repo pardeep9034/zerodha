@@ -1,0 +1,9 @@
+.nav-opt{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    gap: 20px;
+    font-size: 15px;
+    color:black;
+    
+}
