@@ -28,7 +28,7 @@ const Holdings = () => {
   };
 
   useEffect(()=>{
-    axios.get("https://zerodha-backend-five.vercel.app/?vercelToolbarCode=p9KbVrjl3W8-V49/allholdings").then((res)=>{
+    axios.get("http://localhost:3002/allholdings").then((res)=>{
       console.log(res.data);
       setHoldings(res.data);
   })
