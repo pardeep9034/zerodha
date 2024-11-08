@@ -37,7 +37,7 @@ const Universe = () => {
             </div>
 
             <div className="row mt-5 mb-5">
-            <button className="p-3 btn btn-primary" style={{width:"30%",margin:"0 auto"}}>Sign Up for free</button>
+            <button className="p-3 btn btn-primary" style={{width:"30%",margin:"0 auto"}} onClick={()=>{window.location.href="/Signup"}}>Sign Up for free</button>
             </div>
 
           

@@ -8,6 +8,7 @@ import AboutPage from './landing_Page/about/AboutPage';
 import SupportPage from './landing_Page/support/SupportPage';
 import Navbar from './landing_Page/Navbar';
 import Footer from './landing_Page/Footer';
+import Login from './landing_Page/Login/login';
 
 function App() {
     return (
@@ -20,6 +21,8 @@ function App() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/pricing" element={<PricingPage />} />
                 <Route path="/support" element={<SupportPage />} />
+                <Route path="/login" element={<Login/>} />
+                <Route path="*" element={<h1>Not Found</h1>} />
             </Routes>
             <Footer />
         </Router>

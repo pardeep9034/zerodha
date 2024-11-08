@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import { Tooltip,Grow } from "@mui/material";
 import { BarChartOutlined, MoreHoriz } from '@mui/icons-material';
+import GeneralContext from './GeneralContext';
+
 
 const WatchListItem = ({stock}) => {
     let [showWatchlistActions, setShowWatchlistActions] = React.useState(false);
@@ -36,8 +38,13 @@ const WatchListItem = ({stock}) => {
 
 
 const WatchListAction=({uid})=>{
+  const generalcontext=useContext(GeneralContext);
+
+
     const handleBuyClick = (e) => {
-        console.log("Buy clicked for ", uid);
+        generalcontext.openBuyWindow(uid);
+       
+
 
         };
 

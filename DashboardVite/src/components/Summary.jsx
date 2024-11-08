@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+axios.defaults.withCredentials = true;
 
 const Summary = () => {
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+  const fectchdata = async () => {
+    try {
+      const response = await axios.get("http://localhost:3002/dashboard",{withCredentials:true});
+      setUserData(response.data);
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fectchdata();
+  }, []);
+  
+
+  
+
   return (
     <>
       <div className="username">
-        <h6>Hi, User!</h6>
+        <h6>{userData.name}</h6>
         <hr className="divider" />
       </div>
 
