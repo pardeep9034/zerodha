@@ -24,15 +24,15 @@ function Signup() {
     e.preventDefault();
     console.log(formData);
     
-    try {
-      const response = await axios.post("http://localhost:3002/newUser", formData);
-      window.location.href = "https://zerodha-dashbord.vercel.app/";
-      console.log(response.data);
-    } catch (error) {
-      console.error("Error signing up:", error);
-    }
+  //   try {
+  //     const response = await axios.post("http://localhost:3002/newUser", formData);
+  //     window.location.href = "https://zerodha-dashbord.vercel.app/";
+  //     console.log(response.data);
+  //   } catch (error) {
+  //     console.error("Error signing up:", error);
+  //   }
       
-    console.log(formData);
+  //   console.log(formData);
   };
 
   return (
