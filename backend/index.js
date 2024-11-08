@@ -40,7 +40,7 @@ app.post("/newUser", async (req, res) => {
     const token = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
+      secure: true,
       sameSite: "lax", // Allows cross-site cookies
       maxAge: 3600000, // 1 hour
     }
@@ -67,8 +67,8 @@ app.post("/login", async (req, res) => {
     const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: ture,
+      sameSite: "none",
       maxAge: 3600000,
     });
 
