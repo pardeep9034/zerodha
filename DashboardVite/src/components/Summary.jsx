@@ -10,7 +10,7 @@ const Summary = () => {
   });
   const fectchdata = async () => {
     try {
-      const response = await axios.get("http://localhost:3002/dashboard",{withCredentials:true});
+      const response = await axios.get("https://zerodha-backend-five.vercel.app/?vercelToolbarCode=p9KbVrjl3W8-V49/dashboard",{withCredentials:true});
       setUserData(response.data);
       console.log(response.data);
     } catch (error) {

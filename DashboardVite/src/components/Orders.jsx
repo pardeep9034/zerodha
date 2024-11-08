@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Orders = () => {
   let [orders, setOrders] = React.useState([]);
   React.useEffect(() => {
-    axios.get("http://localhost:3002/allorders").then((res) => {
+    axios.get("https://zerodha-backend-five.vercel.app/?vercelToolbarCode=p9KbVrjl3W8-V49/allorders").then((res) => {
       console.log(res.data);
       setOrders(res.data);
     });

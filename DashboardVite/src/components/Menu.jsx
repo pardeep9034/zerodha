@@ -9,7 +9,7 @@ const Menu = () => {
   // let[isProfileOpen,setIsProfileOpen]=useState(false);
 
   const handleLogoutClick=async()=>{
-    const response=await axios.get("http://localhost:3002/logout",{withCredentials:true})
+    const response=await axios.get("https://zerodha-backend-five.vercel.app/?vercelToolbarCode=p9KbVrjl3W8-V49/logout",{withCredentials:true})
 
     window.location.href = response.data.redirect;
     

@@ -25,8 +25,8 @@ function Signup() {
     console.log(formData);
     
     try {
-      const response = await axios.post("http://localhost:3002/newUser", formData);
-      window.location.href = "http://localhost:5174";
+      const response = await axios.post("https://zerodha-backend-five.vercel.app/?vercelToolbarCode=p9KbVrjl3W8-V49/newUser", formData);
+      window.location.href = "https://zerodha-dashbord.vercel.app/";
       console.log(response.data);
     } catch (error) {
       console.error("Error signing up:", error);
